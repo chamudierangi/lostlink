@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+Markdown
+# 🔍 LostLink – National Lost & Found Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**LostLink** is a nationwide, community-driven web application built to help people report, search for, and recover lost belongings anywhere across Sri Lanka with zero friction.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🌟 Key Features
 
-### `npm start`
+* **Anonymous Reporting (No Login Barrier):** Anyone can instantly publish a lost or found report with item images, location, and description without mandatory account registration.
+* **Live Feed & Dynamic Filtering:** Search and filter items dynamically by keywords, category, district, date, and status.
+* **Direct Communication Channels:** Instant direct dial, WhatsApp messaging, and public link sharing.
+* **"Notify Me" SMS Integration:** Allows finders to dispatch customizable direct SMS alerts to item owners.
+* **Dynamic Platform Statistics:** Real-time metrics tracking Total Lost, Total Found, Successfully Returned, and Still Missing items.
+* **Bilingual & Fully Accessible:** Full support for both **English** and **Sinhala (සිංහල)**.
+* **Adaptive Theming:** Clean, responsive UI with **Light Mode** and **Dark Mode** toggle.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Tech Stack
 
-### `npm test`
+* **Frontend:** React.js, Tailwind CSS, Lucide React
+* **Backend & Database:** Firebase Cloud Firestore
+* **Forms & Communication:** FormSubmit (Support Portal), Web SMS/WhatsApp URI Protocols
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🚀 Getting Started Locally
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
+* Node.js (v16.0 or later)
+* npm or yarn
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/chamudierangi/lostlink.git](https://github.com/chamudierangi/lostlink.git)
+   cd lostlink
+Install dependencies:
 
-### `npm run eject`
+Bash
+npm install
+Configure Firebase:
+Create or verify your src/firebase.js configuration:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+JavaScript
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+const firebaseConfig = {
+  apiKey: "YOUR_API_KEY",
+  authDomain: "YOUR_AUTH_DOMAIN",
+  projectId: "YOUR_PROJECT_ID",
+  storageBucket: "YOUR_STORAGE_BUCKET",
+  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+  appId: "YOUR_APP_ID"
+};
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+const app = initializeApp(firebaseConfig);
+export const db = getFirestore(app);
+Run the development server:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Bash
+npm start
+Open http://localhost:3000 to view the application in your browser.
 
-## Learn More
+🔮 Future Enhancements
+AI-powered image matching between lost and found items.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Interactive geographical map visualization for loss/recovery zones.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+In-app real-time encrypted messaging between owners and finders.
 
-### Code Splitting
+Automated integration with public transit and municipal lost & found registries.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+👩‍💻 Author
+Chamudi Erangi
 
-### Analyzing the Bundle Size
+GitHub: @chamudierangi
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+LinkedIn: Chamudi Erangi
 
-### Making a Progressive Web App
+WhatsApp: +94 77 810 7543
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+📄 License
+This project is licensed under the MIT License.
