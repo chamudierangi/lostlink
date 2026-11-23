@@ -1,7 +1,7 @@
 Markdown
 # 🔍 LostLink – National Lost & Found Platform
 
-**LostLink** is a nationwide, community-driven web application built to help people report, search for, and recover lost belongings anywhere across Sri Lanka with zero friction.
+**LostLink** is a nationwide community driven web application built to help people report, search for, and recover lost belongings anywhere across Sri Lanka with zero friction.
 
 ---
 
